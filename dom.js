@@ -47,6 +47,7 @@ for(var i = 0; i < items.length; i++){
     items[i].style.backgroundColor = '#f4f4f4';
 }
 
-console.log(document.getElementById('add'));
+//console.log(document.getElementById('add'));
+//console.log(document.getElementById('add'));
 
 
