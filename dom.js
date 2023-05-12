@@ -31,16 +31,17 @@
 
 
 //(Another Selector)
-// GETELEMENTSBYCLASSNAME (it is used to get group of elements not single elements)
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[0]);
-//items[1].textContent = 'Hello';
-items[0].style.fontWeight = 'bold';
-items[1].style.fontWeight = 'bold';
-items[2].style.fontWeight = 'bold';
-items[3].style.fontWeight = 'bold';
-items[2].style.backgroundColor = 'green';
+//GETELEMENTSBYCLASSNAME(it is used to get group of elements not single elements)
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[0]);
+// //items[1].textContent = 'Hello';
+// items[0].style.fontWeight = 'bold';
+// items[1].style.fontWeight = 'bold';
+// items[2].style.fontWeight = 'bold';
+// items[3].style.fontWeight = 'bold';
+// items[2].style.backgroundColor = 'green';
+//items[4].style.backgroundColor = 'orange';
 
 // ERROR
 //items.style.backgroundColor = '#f4f4f4'; // it doesnt work coz its a HTML collection
@@ -50,7 +51,23 @@ items[2].style.backgroundColor = 'green';
 //    items[i].style.backgroundColor = '#f4f4f4';
 //}
 
-//console.log(document.getElementById('add'));
+// GETELEMENTSBYTAGNAME //
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[0]);
+// //items[1].textContent = 'Hello';
+li[0].style.fontWeight = 'bold';
+li[1].style.fontWeight = 'bold';
+li[2].style.fontWeight = 'bold';
+li[3].style.fontWeight = 'bold';
+li[4].style.fontWeight = 'bold';
+// items[2].style.backgroundColor = 'green';
+li[4].style.backgroundColor = 'pink';
+
+
+// QUERYSELECTOR //
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px #ccc';
 
 
 
