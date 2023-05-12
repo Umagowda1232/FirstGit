@@ -52,22 +52,64 @@
 //}
 
 // GETELEMENTSBYTAGNAME //
-var li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[0]);
-// //items[1].textContent = 'Hello';
-li[0].style.fontWeight = 'bold';
-li[1].style.fontWeight = 'bold';
-li[2].style.fontWeight = 'bold';
-li[3].style.fontWeight = 'bold';
-li[4].style.fontWeight = 'bold';
-// items[2].style.backgroundColor = 'green';
-li[4].style.backgroundColor = 'pink';
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[0]);
+// // //items[1].textContent = 'Hello';
+// li[0].style.fontWeight = 'bold';
+// li[1].style.fontWeight = 'bold';
+// li[2].style.fontWeight = 'bold';
+// li[3].style.fontWeight = 'bold';
+// li[4].style.fontWeight = 'bold';
+// // items[2].style.backgroundColor = 'green';
+// li[4].style.backgroundColor = 'pink';
 
 
 // QUERYSELECTOR //
 // var header = document.querySelector('#main-header');
-// header.style.borderBottom = 'solid 4px #ccc';
+// header.style.borderBottom = 'solid 6px #ccc';
+
+// var input = document.querySelector('input');
+// input.value = 'Hello World';
+
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "SEND"
+
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
+
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
+
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color = 'black';
+
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
+
+// var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.visibility = 'hidden';
+
+// QUERYSELECTORALL //
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+//titles[0].textContent = 'Hello';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+//var secItem = document.querySelectorAll('li:nth-child(2)');
+
+
+for (var i = 0; i < odd.length; i++) {
+    odd[i].style.backgroundColor = '#008000';
+    even[i].style.backgroundColor = '#ccc';
+    //secItem[1].style.color = '#008000';
+
+}
+
+
+
+
 
 
 
