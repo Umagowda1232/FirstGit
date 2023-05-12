@@ -35,19 +35,22 @@
 var items = document.getElementsByClassName('list-group-item');
 console.log(items);
 console.log(items[0]);
-items[1].textContent = 'Hello';
+//items[1].textContent = 'Hello';
+items[0].style.fontWeight = 'bold';
 items[1].style.fontWeight = 'bold';
-items[1].style.backgroundColor = 'yellow';
+items[2].style.fontWeight = 'bold';
+items[3].style.fontWeight = 'bold';
+items[2].style.backgroundColor = 'green';
 
 // ERROR
 //items.style.backgroundColor = '#f4f4f4'; // it doesnt work coz its a HTML collection
 // to solve this error we can use for loop and resolve
 
-for(var i = 0; i < items.length; i++){
-    items[i].style.backgroundColor = '#f4f4f4';
-}
+//for (var i = 0; i < items.length; i++) {
+//    items[i].style.backgroundColor = '#f4f4f4';
+//}
 
 //console.log(document.getElementById('add'));
-//console.log(document.getElementById('add'));
+
 
 
